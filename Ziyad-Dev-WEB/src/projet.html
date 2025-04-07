@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Coupe du Monde 2022 - Qatar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      plugins: [tailwindcss, require('daisyui')],
+      theme: {
+        extend: {},
+      },
+      daisyui: {
+        themes: ["light", "dark", "cupcake"], // Ajout des thèmes DaisyUI
+      },
+    }
+  </script>
+</head>
+
+<body class="bg-[#450418] text-[#F5E1CB] font-sans">
+  <header class="text-center my-5">
+    <div class="w-full max-w-sm mx-auto">
+      <img src="images/cap.png" alt="Logo de la Coupe du Monde" class="w-full h-auto">
+    </div>
+  </header>
+
+  <div class="navbar bg-neutral justify-center">
+    <nav class="text-base space-x-4">
+      <a href="#moments-forts" class="btn btn-sm btn-neutral">Moments forts</a>
+      <a href="page-equipes.html" class="btn btn-sm btn-neutral">Matches</a>
+      <a href="page2.html" class="btn btn-sm btn-neutral">Stades</a>
+      <a href="formulaire.html" class="btn btn-sm btn-neutral">Formulaire</a>
+    </nav>
+  </div>
+
+  <main class="px-4 md:px-20 space-y-10 mt-10">
+    <section id="moments-forts" class="prose max-w-none">
+      <h2 class="text-2xl text-center">Moments forts</h2>
+      <p>Voici quelques moments forts de la Coupe du Monde 2022...</p>
+    </section>
+
+    <section id="epopee-marocaine" class="prose max-w-none">
+      <h2 class="text-4xl text-center">L'épopée marocaine</h2>
+      <img src="images/maroc.PNG" alt="Image de l'épopée marocaine" class="mx-auto rounded-xl">
+      <p>L'équipe nationale de football du Maroc a marqué l'histoire en devenant la première équipe arabe et africaine à atteindre les demi-finales de la Coupe du Monde...</p>
+    </section>
+
+    <section id="netherlands-argentina" class="prose max-w-none">
+      <h2 class="text-4xl text-center">Un Pays-Bas - Argentine sous tension</h2>
+      <img src="images/hollande.PNG" alt="Image match arg pays bas" class="mx-auto rounded-xl">
+      <p>De la légèreté et de la beauté, il en a trop rarement été question durant cet autre choc...</p>
+    </section>
+
+    <section id="messi-argentina" class="prose max-w-none">
+      <h2 class="text-4xl text-center">Lionel Messi et l'Argentine sur le toit du monde</h2>
+      <img src="images/messi.PNG" alt="Image de la finale" class="mx-auto rounded-xl">
+      <p>C'est l'image finale de cette compétition plus que controversée...</p>
+      <h2 class="text-xl">Sont considérés comme champions du monde les joueurs suivants :</h2>
+
+      <ul class="list-disc ml-5">
+        <li><strong>Gardiens de but:</strong>
+          <ul class="list-disc ml-5">
+            <li>Emiliano Martínez (Aston Villa)</li>
+            <li>Geronimo Rulli (Villarreal)</li>
+            <li>Franco Armani (River Plate)</li>
+          </ul>
+        </li>
+        <li><strong>Défenseurs:</strong>
+          <ul class="list-disc ml-5">
+            <li>Nahuel Molina (Atletico de Madrid)</li>
+            <li>Gonzalo Montiel (FC Séville)</li>
+            <li>Nicolás Tagliafico (Lyon)</li>
+            <li>Marcos Acuna (FC Séville)</li>
+            <li>German Pezzella (Real Betis)</li>
+            <li>Nicolas Otamendi (Benfica)</li>
+            <li>Lisandro Martínez (Manchester United)</li>
+            <li>Cristian Romero (Tottenham)</li>
+            <li>Juan Foyth (Villarreal)</li>
+          </ul>
+        </li>
+        <li><strong>Milieux de terrain:</strong>
+          <ul class="list-disc ml-5">
+            <li>Guido Rodríguez (Betis Séville)</li>
+            <li>Leandro Paredes (Juve)</li>
+            <li>Exequiel Palacios (Bayer Leverkusen)</li>
+            <li>Alexis Mac Allister (Brighton)</li>
+            <li>Papu Gómez (Séville FC)</li>
+            <li>Rodrigo De Paul (Atletico de Madrid)</li>
+            <li>Enzo Fernandez (SL Benfica)</li>
+          </ul>
+        </li>
+        <li><strong>Attaquants:</strong>
+          <ul class="list-disc ml-5">
+            <li>Lionel Messi (PSG)</li>
+            <li>Lautaro Martínez (Inter Milan)</li>
+            <li>Julian Alvarez (Manchester City)</li>
+            <li>Paulo Dybala (AS Rome)</li>
+            <li>Nicolas Gonzalez (Fiorentina)</li>
+            <li>Joaquín Correa (Inter Milan)</li>
+            <li>Angel Di María (Juventus)</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="bg-neutral text-neutral-content p-4 text-center mt-10">
+    <p>© 2024 Coupe du Monde - Travail amateur</p>
+  </footer>
+
+  <button id="scroll-to-top" onclick="scrollToTop()" class="fixed right-5 md:right-24 top-1/2 transform -translate-y-1/2 hidden btn btn-sm btn-neutral">↑</button>
+
+  <script>
+    function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    window.onscroll = function () {
+      const button = document.getElementById("scroll-to-top");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        button.classList.remove("hidden");
+      } else {
+        button.classList.add("hidden");
+      }
+    };
+  </script>
+</body>
+
+</html>

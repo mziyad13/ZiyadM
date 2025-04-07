@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Stades de la Coupe du Monde 2022 - Qatar</title>
+  <meta charset="utf-8" >
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 20px;
+      background-color: #d9bdb7; /* Couleur de fond */
+      color: #000; /* Couleur du texte */
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+
+    .stadium-info {
+      width: 80%;
+      margin: 20px auto;
+      text-align: justify;
+    }
+
+    /* Définir une classe pour les images des stades */
+    .stadium-image {
+      max-width: 200%; /* Augmentation de la taille par deux */
+      height: auto;
+      display: block;
+      margin: 10px auto;
+      max-height: 600px; /* Ajout de cette ligne pour définir une hauteur maximale */
+    }
+
+    .navigation {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #5c504d;
+      padding: 10px 20px;
+      z-index: 1000;
+    }
+
+    .nav-link {
+      text-align: center;
+      font-size: 1.2em;
+      text-decoration: none;
+      color: #d9bdb7;
+      margin: 0 15px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      background-color: #5c504d;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .nav-link:hover {
+      background-color: #f7ac9c;
+      color: #fff;
+    }
+
+    footer {
+      background-color: #d9bdb7;
+      padding: 10px;
+      text-align: center;
+      color: #450418;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    h1 {
+      margin-top: 60px; /* Ajoutez une marge supérieure au titre pour éviter le chevauchement avec la barre de navigation */
+    }
+
+    main {
+      margin-bottom: 60px; /* Ajout d'une marge en bas du contenu principal pour éviter le chevauchement avec le pied de page */
+    }
+
+    /* Styles pour la liste ordonnée */
+    ol {
+      list-style-type: none;
+      counter-reset: li; /* Réinitialiser le compteur de la liste ordonnée */
+      padding-left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* Centre la liste horizontalement */
+    }
+
+    ol li {
+      position: relative;
+      margin-bottom: 20px;
+      padding-left: 2em;
+      min-height: 3em;
+      width: 25%;
+    }
+
+    ol li:before {
+      content: counter(li); /* Utiliser le compteur comme contenu */
+      counter-increment: li; /* Incrémenter le compteur à chaque élément de la liste */
+      position: absolute;
+      left: -1.5em;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #5c504d;
+      color: #fff;
+      border-radius: 50%;
+      width: 1.2em;
+      height: 1.2em;
+      line-height: 1.2em;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="navigation">
+    <nav>
+      [ <a href="projet.html" class="nav-link">Moments forts</a>
+        | <a href="page2.html" class="nav-link">Stades</a>
+        | <a href="formulaire.html" class="nav-link">Formulaire</a>
+      ]
+    </nav>
+  </header>
+
+  <main>
+    <h1>Stades de la Coupe du Monde 2022 - Qatar</h1>
+
+    <p>Après plus de deux semaines de matchs de poules, voici les équipes qui ont réussi à se qualifier pour la phase finale de cette coupe du monde :</p>
+
+    <ol>
+      <li>France</li>
+      <li>Espagne</li>
+      <li>Brésil</li>
+      <li>Corée du Sud</li>
+      <li>Japon</li>
+      <li>Maroc</li>
+      <li>Sénégal</li>
+      <li>Croatie</li>
+      <li>Argentine</li>
+      <li>Pays-Bas</li>
+      <li>Angleterre</li>
+      <li>États-Unis</li>
+      <li>Australie</li>
+      <li>Pologne</li>
+      <li>Suisse</li>
+      <li>Portugal</li>
+    </ol>
+
+    <p>Cliquez sur les matchs qui vous intéressent pour regarder leurs résumés ! :)</p>
+ <img src="finale.png" alt="Image des matchs" class="stadium-image" usemap="#matchs1">
+  <map name="matchs1">
+    <area shape="rect" coords="1,1,999,999" href="https://www.youtube.com/watch?v=zhEWqfP6V_w" alt="Zone cliquable">
+  </map>
+
+  <img src="maroc.png" alt="Image des matchs" class="stadium-image" usemap="#matchs2">
+  <map name="matchs2">
+    <area shape="rect" coords="1,1,999,999" href="https://www.youtube.com/watch?v=M766FGsv5do" alt="Zone cliquable">
+  </map>
+
+  <img src="france.png" alt="Image des matchs" class="stadium-image" usemap="#matchs3">
+  <map name="matchs3">
+    <area shape="rect" coords="1,1,999,999" href="https://www.youtube.com/watch?v=Q-zmXSb0WKU" alt="Zone cliquable">
+  </map>
+ 
+</main>
+  <footer>
+    <p>© 2024 Coupe du Monde - Travail amateur</p>
+  </footer>
+</body>
+
+</html>
