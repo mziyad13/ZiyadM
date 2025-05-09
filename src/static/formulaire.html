@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Contact - Coupe du Monde 2022</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#450418',
+            secondary: '#F5E1CB',
+            accent: '#d9bdb7',
+            formbg: '#5c504d',
+            formhover: '#f7ac9c'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-primary text-secondary min-h-screen flex flex-col items-center">
+  <header class="w-full py-5 flex justify-center">
+    <div class="text-center">
+      <img src="../../images/Cap.PNG" alt="Logo de la Coupe du Monde" class="mx-auto max-w-xs">
+    </div>
+  </header>
+
+  <div class="w-full bg-accent py-4">
+    <nav class="text-center text-lg">
+      [ <a href="projet.html" class="text-formbg bg-formbg px-3 py-1 rounded hover:bg-formhover hover:text-white transition">Moments forts</a>
+      <a href="../static/calculatrice-html.html"class="text-formbg bg-formbg px-3 py-1 rounded hover:bg-formhover hover:text-white transition">Calculatrice</a>
+]
+    </nav>
+  </div>
+
+  <main class="flex-grow w-full max-w-4xl px-4 py-8">
+    <form id="contactForm" class="bg-formbg p-6 rounded-lg shadow-lg">
+      <div class="mb-4">
+        <label for="prenom" class="block text-accent mb-2">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required 
+               class="w-full px-3 py-2 rounded border border-accent bg-white text-formbg">
+      </div>
+
+      <div class="mb-4">
+        <label for="nom" class="block text-accent mb-2">Nom :</label>
+        <input type="text" id="nom" name="nom" required 
+               class="w-full px-3 py-2 rounded border border-accent bg-white text-formbg">
+      </div>
+
+      <div class="mb-4">
+        <label for="email" class="block text-accent mb-2">Email :</label>
+        <input type="email" id="email" name="email" required 
+               class="w-full px-3 py-2 rounded border border-accent bg-white text-formbg">
+      </div>
+
+      <div class="mb-4">
+        <label for="message" class="block text-accent mb-2">Message :</label>
+        <textarea id="message" name="message" rows="4" required 
+                  class="w-full px-3 py-2 rounded border border-accent bg-white text-formbg"></textarea>
+      </div>
+
+      <div class="mb-6">
+        <label for="support" class="block text-accent mb-2">Qui supportiez-vous durant la Coupe du Monde :</label>
+        <select id="support" name="support" required 
+                class="w-full px-3 py-2 rounded border border-accent bg-white text-formbg">
+          <option value="" selected disabled hidden>Choisissez une option</option>
+          <optgroup label="Groupe A">
+            <option value="qatar">Qatar</option>
+            <option value="equateur">Équateur</option>
+            <option value="senegal">Sénégal</option>
+            <option value="pays-bas">Pays-Bas</option>
+          </optgroup>
+          <optgroup label="Groupe B">
+            <option value="angleterre">Angleterre</option>
+            <option value="iran">Iran</option>
+            <option value="etats-unis">États-Unis</option>
+            <option value="pays-de-galles">Pays de Galles</option>
+          </optgroup>
+          <optgroup label="Groupe C">
+            <option value="argentine">Argentine</option>
+            <option value="arabie saoudite">Arabie Saoudite</option>
+            <option value="mexique">Mexique</option>
+            <option value="pologne">Pologne</option>
+          </optgroup>
+          <optgroup label="Groupe D">
+            <option value="france">France</option>
+            <option value="australie">Australie</option>
+            <option value="danemark">Danemark</option>
+            <option value="tunisie">Tunisie</option>
+          </optgroup>
+          <optgroup label="Groupe E">
+            <option value="espagne">Espagne</option>
+            <option value="costa-rica">Costa Rica</option>
+            <option value="japon">Japon</option>
+            <option value="allemagne">Allemagne</option>
+          </optgroup>
+          <optgroup label="Groupe F">
+            <option value="belgique">Belgique</option>
+            <option value="canada">Canada</option>
+            <option value="maroc">Maroc</option>
+            <option value="croatie">Croatie</option>
+          </optgroup>
+          <optgroup label="Groupe G">
+            <option value="bresil">Brésil</option>
+            <option value="serbie">Serbie</option>
+            <option value="suisse">Suisse</option>
+            <option value="cameroun">Cameroun</option>
+          </optgroup>
+          <optgroup label="Groupe H">
+            <option value="portugal">Portugal</option>
+            <option value="ghana">Ghana</option>
+            <option value="uruguay">Uruguay</option>
+            <option value="coree-sud">Corée du Sud</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="mb-6">
+        <fieldset class="border border-accent p-4 rounded">
+          <legend class="text-accent px-2">Sur quels types de médias regardiez-vous les matchs?</legend>
+          
+          <div class="flex items-center mb-2">
+            <input type="checkbox" id="tv" name="media" value="tv" class="mr-2">
+            <label for="tv">Télévision</label>
+          </div>
+          
+          <div class="flex items-center mb-2">
+            <input type="checkbox" id="radio" name="media" value="radio" class="mr-2">
+            <label for="radio">Radio</label>
+          </div>
+          
+          <div class="flex items-center">
+            <input type="checkbox" id="internet" name="media" value="internet" class="mr-2">
+            <label for="internet">Internet</label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="mb-6">
+        <fieldset class="border border-accent p-4 rounded">
+          <legend class="text-accent px-2">Où avez-vous regardé les matchs?</legend>
+          
+          <div class="flex items-center mb-2">
+            <input type="radio" id="fanzone" name="lieu" value="fanzone" class="mr-2" required>
+            <label for="fanzone">En fan zone</label>
+          </div>
+          
+          <div class="flex items-center mb-2">
+            <input type="radio" id="tv-maison" name="lieu" value="tv-maison" class="mr-2">
+            <label for="tv-maison">Sur ma télévision</label>
+          </div>
+          
+          <div class="flex items-center">
+            <input type="radio" id="stade" name="lieu" value="stade" class="mr-2">
+            <label for="stade">Au stade</label>
+          </div>
+        </fieldset>
+      </div>
+
+      <button type="button" onclick="sendMail()" 
+             class="w-full bg-formhover hover:bg-formbg text-white font-bold py-2 px-4 rounded cursor-pointer transition">
+        Envoyer
+      </button>
+    </form>
+  </main>
+
+  <footer class="w-full bg-accent py-3 text-center text-primary">
+    <p>© 2024 Coupe du Monde - Travail amateur</p>
+  </footer>
+
+  <script>
+    function sendMail() {
+      // Récupération des valeurs du formulaire
+      const prenom = document.getElementById('prenom').value;
+      const nom = document.getElementById('nom').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      const support = document.getElementById('support').value;
+      
+      // Récupération des médias sélectionnés
+      const medias = [];
+      if (document.getElementById('tv').checked) medias.push('Télévision');
+      if (document.getElementById('radio').checked) medias.push('Radio');
+      if (document.getElementById('internet').checked) medias.push('Internet');
+      
+      // Récupération du lieu sélectionné
+      let lieu = '';
+      if (document.getElementById('fanzone').checked) lieu = 'Fan zone';
+      else if (document.getElementById('tv-maison').checked) lieu = 'Télévision à domicile';
+      else if (document.getElementById('stade').checked) lieu = 'Stade';
+      
+      // Construction du corps du message
+      let body = `Nom: ${prenom} ${nom}\n`;
+      body += `Email: ${email}\n\n`;
+      body += `Message:\n${message}\n\n`;
+      body += `Équipe supportée: ${support}\n`;
+      body += `Médias utilisés: ${medias.join(', ') || 'Aucun'}\n`;
+      body += `Lieu de visionnage: ${lieu || 'Non spécifié'}`;
+      
+      // Encodage pour l'URL
+      const subject = `Message de ${prenom} ${nom} - Coupe du Monde 2022`;
+      const encodedBody = encodeURIComponent(body);
+      
+      // Construction du lien mailto avec votre adresse email
+      const mailtoLink = `mailto:votre@email.com?subject=${encodeURIComponent(subject)}&body=${encodedBody}`;
+      
+      // Ouverture du client de messagerie
+      window.location.href = mailtoLink;
+    }
+  </script>
+</body>
+
+</html>

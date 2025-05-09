@@ -1,0 +1,263 @@
+    <!DOCTYPE html>
+    <html lang="fr">
+
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Coupe du Monde 2022 - Fusion</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.css" rel="stylesheet" />
+      <style>
+        html {
+          scroll-behavior: smooth;
+        }
+        .bg-cdm {
+          background-image: url('../../images/coeur.gif'); 
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-attachment: fixed;
+          background-color: black;
+        }
+        .section-transition {
+          transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        }
+      </style>
+    </head>
+
+    <body class="font-sans">
+      <!-- Navigation je dois mettre 2 gif 1 a gauche un a droite-->
+      <nav class="bg-[#5c504d] text-[#d9bdb7] py-4 fixed top-0 left-0 w-full z-50 flex justify-center space-x-6">
+        <a href="#section-moments" class="btn btn-sm">Moments forts</a>
+        <a href="#section-stades" class="btn btn-sm">Stades</a>
+        <a href="#section-questionnaire" class="btn btn-sm">Questionnaire</a>
+        <a href="../static/calculatrice-html.html" class="btn btn-sm">Calculatrice</a>
+
+      </nav>
+
+      <!-- SECTION 1: Moments Forts -->
+      <section id="section-moments" class="pt-24 pb-12 px-4 bg-[#450418] text-[#F5E1CB] section-transition">
+        <div class="max-w-5xl mx-auto">
+          <div class="text-center my-6">
+            <img src="../../images/cap.png" alt="Logo de la Coupe du Monde" class="w-40 mx-auto rounded-lg shadow-lg">
+          </div>
+          <h2 class="text-4xl font-bold text-center mb-8">Moments forts</h2>
+          <p class="text-justify mb-6">Voici quelques moments forts de la Coupe du Monde 2022...</p>
+          <section class="mb-8">
+            <h3 class="text-2xl font-bold mb-4">L'épopée marocaine</h3>
+            <img src="../../images/maroc.PNG" class="w-full rounded shadow mb-4" />
+            <p>L'équipe nationale de football du Maroc a marqué l'histoire en devenant la première équipe arabe et africaine à atteindre les demi-finales...</p>
+          </section>
+          <section class="mb-8">
+            <h3 class="text-2xl font-bold mb-4">Un Pays-Bas - Argentine sous tension</h3>
+            <img src="../../images/hollande.PNG" class="w-full rounded shadow mb-4" />
+            <p>De vives tensions ont émaillé ce match...</p>
+          </section>
+          <section>
+            <h3 class="text-2xl font-bold mb-4">Lionel Messi et l'Argentine sur le toit du monde</h3>
+            <img src="../../images/messi.PNG" class="w-full rounded shadow mb-4" />
+            <p>C'est l'image finale de cette compétition plus que controversée...</p>
+          </section>
+        </div>
+      </section>
+
+      <section id="stades" class="hidden-section">
+        <h1>Stades de la Coupe du Monde 2022 - Qatar</h1>
+      
+        <div class="overflow-x-auto my-6">
+          <table class="table table-zebra w-full">
+            <!-- Titre -->
+            <thead>
+              <tr>
+                <th colspan="3" class="text-center text-2xl font-bold bg-base-200 text-base-content">
+                  Les stades de la coupe du monde
+                </th>
+              </tr>
+              <!-- En-têtes des colonnes -->
+              <tr class="bg-base-300 text-base-content">
+                <th>Stade</th>
+                <th>Emplacement</th>
+                <th>Capacité</th>
+              </tr>
+            </thead>
+            
+            <!-- Corps du tableau -->
+            <tbody>
+              <tr>
+                <td>Khalifa International Stadium</td>
+                <td>Al Waab St, Doha, Qatar</td>
+                <td>45 900</td>
+              </tr>
+              <tr class="hover:bg-base-300">
+                <td>Al-Bayt Stadium</td>
+                <td>Al-Khor, Qatar</td>
+                <td>68 895</td>
+              </tr>
+              <tr>
+                <td>Al-Janoub Stadium</td>
+                <td>Al-Wakrah, Qatar</td>
+                <td>44 325</td>
+              </tr>
+              <tr class="hover:bg-base-300">
+                <td>Education City Stadium</td>
+                <td>Doha, Qatar</td>
+                <td>44 667</td>
+              </tr>
+              <tr>
+                <td>Stade Al-Rayyan</td>
+                <td>Al Rayyan, Qatar</td>
+                <td>45 032</td>
+              </tr>
+              <tr class="hover:bg-base-300">
+                <td>Al-Thumama Stadium</td>
+                <td>Doha, Qatar</td>
+                <td>44 400</td>
+              </tr>
+              <tr>
+                <td>Ras Abu Aboud Stadium</td>
+                <td>Doha, Qatar</td>
+                <td>44 089</td>
+              </tr>
+              <tr class="hover:bg-base-300">
+                <td>Lusail Iconic Stadium</td>
+                <td>Lusail, Qatar</td>
+                <td>88 966</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="stadium-info">
+    <h2>Stades de la Coupe du Monde au Qatar</h2>
+
+    <div class="carousel w-full my-6">
+      <!-- Slide 1 -->
+      <div id="slide1" class="carousel-item w-full flex flex-col items-center relative">
+        <img src="../../images/stade.khalifa.png" class="w-2/3" alt="Khalifa International Stadium" />
+        <p class="text-white mt-4 text-center px-4 max-w-3xl">
+          Construit en 1976 et rénové en 2017, ce stade de 40 000 places dispose de technologies de climatisation avancées. Il est situé dans l’Aspire Zone de Doha.
+        </p>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide8" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    
+      <!-- Slide 2 -->
+      <div id="slide2" class="carousel-item w-full flex flex-col items-center relative">
+        <img src="../../images/albayt.png" class="w-2/3" alt="Al-Bayt Stadium" />
+        <p class="text-white mt-4 text-center px-4 max-w-3xl">
+          Le stade Al-Bayt, avec son design inspiré des tentes bédouines, peut accueillir jusqu’à 60 000 spectateurs.
+        </p>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    
+      <!-- Slide 3 -->
+      <div id="slide3" class="carousel-item w-full flex flex-col items-center relative">
+        <img src="../../images/aljanoub.png" class="w-2/3" alt="Al-Janoub Stadium" />
+        <p class="text-white mt-4 text-center px-4 max-w-3xl">
+          Le stade Al-Janoub, situé à Al-Wakrah, se distingue par son architecture futuriste inspirée des voiles de bateaux.
+        </p>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    
+      <!-- Slide 4 -->
+      <div id="slide4" class="carousel-item w-full flex flex-col items-center relative">
+        <img src="../../images/stade4.png" class="w-2/3" alt="Education City Stadium" />
+        <p class="text-white mt-4 text-center px-4 max-w-3xl">
+          Surnommé le "Diamant du désert", le stade d'Education City est l’un des plus durables de la Coupe du Monde.
+        </p>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide5" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    
+      <!-- Slide 5 -->
+      <div id="slide5" class="carousel-item w-full flex flex-col items-center relative">
+        <img src="../../images/stade5.png" class="w-2/3" alt="Stade Al-Rayyan" />
+        <p class="text-white mt-4 text-center px-4 max-w-3xl">
+          Le stade Al-Rayyan est entouré de motifs symbolisant la culture qatarienne et sa passion pour le sport.
+        </p>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide6" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    
+      <!-- Slide 6 -->
+      <div id="slide6" class="carousel-item w-full flex flex-col items-center relative">
+        <img src="../../images/stade6.png" class="w-2/3" alt="Al-Thumama Stadium" />
+        <p class="text-white mt-4 text-center px-4 max-w-3xl">
+          Al-Thumama s'inspire du "gahfiya", coiffe traditionnelle, et accueille 40 000 spectateurs.
+        </p>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide5" class="btn btn-circle">❮</a>
+          <a href="#slide7" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    
+      <!-- Slide 7 -->
+      <div id="slide7" class="carousel-item w-full flex flex-col items-center relative">
+        <img src="../../images/stade7.png" class="w-2/3" alt="Ras Abu Aboud Stadium" />
+        <p class="text-white mt-4 text-center px-4 max-w-3xl">
+          Ce stade est unique : construit à partir de conteneurs maritimes, il sera démonté après l'événement.
+        </p>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide6" class="btn btn-circle">❮</a>
+          <a href="#slide8" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    
+      <!-- Slide 8 -->
+      <div id="slide8" class="carousel-item w-full flex flex-col items-center relative">
+        <img src="../../images/srade8.png" class="w-2/3" alt="Lusail Iconic Stadium" />
+        <p class="text-white mt-4 text-center px-4 max-w-3xl">
+          Le stade emblématique de Lusail est le plus grand du tournoi et a accueilli la finale de la Coupe du Monde.
+        </p>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide7" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+    
+
+    
+
+      
+
+      <!-- SECTION 3: Questionnaire -->
+      <section id="section-questionnaire" class="pt-24 pb-12 px-4 bg-cdm section-transition min-h-screen">
+        <div class="max-w-md mx-auto bg-white/30 p-8 rounded-lg shadow-lg backdrop-blur-sm">
+          <div class="flex justify-between items-center mb-4">
+            <h2 class="text-xl font-bold">Questionnaire Coupe du Monde 2022</h2>
+            
+          </div>
+    
+          <progress id="progressBar" class="progress w-full mb-4" value="0" max="100"></progress>
+    
+          <div id="questionContainer" class="space-y-4"></div>
+          <div id="feedback" class="mt-4 text-center text-red-600 font-semibold"></div>
+        </div>
+        <button id="bruteforceBtn" class="bg-red-500 text-white py-2 px-4 rounded shadow hover:bg-red-400 transition duration-200">
+          Bruteforce
+        </button>
+    
+        
+      </section>
+    
+      <!-- Footer -->
+      <footer class="bg-[#5c504d] text-[#d9bdb7] text-center py-6">
+        <p>© 2024 Coupe du Monde - Travail amateur</p>
+      </footer>
+      <script src="../js/questionnaire.js"></script>
+    </body>
+    
+    </html>
